@@ -1,0 +1,17 @@
+/* FONT FACE HEADER
+font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-weight: 600;
+font-style: normal; */
+
+/* FONT FACE PARAGRAF
+font-family: "Karla", sans-serif;
+font-optical-sizing: auto;
+font-weight: 300;
+font-style: normal; */
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+}
