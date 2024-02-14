@@ -10,6 +10,11 @@ font-optical-sizing: auto;
 font-weight: 300;
 font-style: normal; */
 
+header {
+  font-family: "Karla", sans-serif;
+  font-size: 1.2rem;
+}
+
 h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
