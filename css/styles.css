@@ -15,14 +15,40 @@ header {
   font-size: 1.2rem;
 }
 
+body {
+  background-color: #e2eee1;
+}
+
 h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 3rem;
+  color: #513e36;
+}
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #513e36;
 }
 
 p {
   font-family: "Karla", sans-serif;
   font-weight: 300;
   font-size: 1rem;
+  line-height: 30px;
+  letter-spacing: 2px;
+  color: #513e36;
 }
+
+/* index.html */
+
+/* tools.html */
+
+/* forage.html */
+
+/* biotop.html */
+
+/* plants.html */
+
+/* plant_info.html */
