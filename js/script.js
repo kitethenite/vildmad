@@ -1,122 +1,89 @@
 //forage side //
+const city = document.getElementById("city");
+const suburban = document.getElementById("suburban");
+const park = document.getElementById("park");
+
+city.addEventListener("click", function (event) {
+  event.preventDefault();
+  localStorage.setItem("location", "city");
+  window.location.href = "biotop.html";
+});
+
+suburban.addEventListener("click", function (event) {
+  event.preventDefault();
+  localStorage.setItem("location", "suburban");
+  window.location.href = "biotop.html";
+});
+
+park.addEventListener("click", function (event) {
+  event.preventDefault();
+  localStorage.setItem("location", "park");
+  window.location.href = "biotop.html";
+});
+
 document.addEventListener("DOMContentLoaded", function () {
-  const city = document.getElementById("city");
-  const suburban = document.getElementById("suburban");
-  const park = document.getElementById("park");
-  const images = document.querySelectorAll(".image-list img");
   const title = document.getElementById("title");
-  const img = document.querySelector("img");
   const description = document.getElementById("destination");
 
-  city.addEventListener("click", function (event) {
-    event.preventDefault();
-    localStorage.setItem("location", "city");
-    window.location.href = "biotop.html";
-  });
+  const location = localStorage.getItem("location");
 
-  suburban.addEventListener("click", function (event) {
-    event.preventDefault();
-    localStorage.setItem("location", "suburban");
-    window.location.href = "biotop.html";
-  });
-
-  park.addEventListener("click", function (event) {
-    event.preventDefault();
-    localStorage.setItem("location", "park");
-    window.location.href = "biotop.html";
-  });
-
-  document.addEventListener("DOMContentLoaded", function () {
-    const images = document.querySelectorAll(".image-list img");
-
-    images.forEach((image) => {
-      image.addEventListener("click", function (event) {
-        event.preventDefault();
-        const selectedText = this.getAttribute("data-text");
-        const selectedImageSrc = this.getAttribute("src");
-        localStorage.setItem("selectedText", selectedText);
-        localStorage.setItem("selectedImageSrc", selectedImageSrc);
-        window.location.href = "biotop.html";
-      });
-    });
-  });
-
-  document.addEventListener("DOMContentLoaded", function () {
-    const selectedText = localStorage.getItem("selectedText");
-    const selectedImageSrc = localStorage.getItem("selectedImageSrc");
-    if (selectedText && selectedImageSrc) {
-      document.getElementById("title").textContent = selectedText;
-      document.getElementById("img").src = selectedImageSrc;
-      document.getElementById("destination").textContent =
-        getDescription(selectedText); // Funktion til at få beskrivelse baseret på valgt tekst
-    }
-  });
-
-  function getDescription(text) {
-    // Returner en beskrivelse baseret på den valgte tekst
-    if (text === "City") {
-      return "Description of city";
-    } else if (text === "Suburban") {
-      return "Description of suburban";
-    } else if (text === "Park") {
-      return "Description of park";
-    } else {
-      return "Default description";
-    }
+  if (location === "city") {
+    title.textContent = "City";
+    img.src = "city.jpg";
+    description.textContent = "Description of city";
+  } else if (location === "suburban") {
+    title.textContent = "Suburban";
+    img.src = "suburban.jpg";
+    description.textContent = "Description of suburban";
+  } else if (location === "park") {
+    title.textContent = "Park";
+    img.src = "park.jpg";
+    description.textContent = "Description of park";
   }
 });
-//biotop//
-// Hændelseslytter for forår
-spring.addEventListener("click", function (event) {
-  event.preventDefault();
-  localStorage.setItem("season", "spring");
-  window.location.href = "plants.html";
-});
 
-// Hændelseslytter for sommer
-summer.addEventListener("click", function (event) {
-  event.preventDefault();
-  localStorage.setItem("season", "summer");
-  window.location.href = "plants.html";
-});
+// biotop //
+document.addEventListener("DOMContentLoaded", function () {
+  const spring = document.getElementById("spring");
+  const summer = document.getElementById("summer");
+  const fall = document.getElementById("fall");
+  const winter = document.getElementById("winter");
 
-// Hændelseslytter for efterår
-fall.addEventListener("click", function (event) {
-  event.preventDefault();
-  localStorage.setItem("season", "fall");
-  window.location.href = "plants.html";
-});
-
-// Hændelseslytter for vinter
-winter.addEventListener("click", function (event) {
-  event.preventDefault();
-  localStorage.setItem("season", "winter");
-  window.location.href = "plants.html";
-});
-
-const url = "https://pitrqqwekcolglxqqngo.supabase.co/rest/v1/vild_mad?id=eq.3";
-
-const key =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBpdHJxcXdla2NvbGdseHFxbmdvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc2ODA5NjksImV4cCI6MjAyMzI1Njk2OX0.84FjJ7ILcIkugWA0eYWDBVy-ChVHdqLbYHSfHxmv1eo";
-//GET /people?select=fullName:full_name,birthDate:birth_date HTTP/1.1
-
-fetch(url, {
-  method: "GET",
-  headers: {
-    apikey: key,
-  },
-})
-  .then((response) => response.json())
-  .then((data) => showData(data));
-
-function showPlants(plants) {
-  plants.forEach((plant) => {
-    const template = document.querySelector("#smallplantsTemplate").content;
-    const copy = template.cloneNode(true);
-
-    copy.querySelector("img").src = plant.image;
-    copy.querySelector("h3").textContent = plant.name;
-
-    document.querySelector("main").appendChild(copy);
+  // Hændelseslytter for forår
+  spring.addEventListener("click", function (event) {
+    event.preventDefault();
+    localStorage.setItem("season", "spring");
+    changeSeasonText("Spring");
+    window.location.href = "plants.html";
   });
-}
+
+  // Hændelseslytter for sommer
+  summer.addEventListener("click", function (event) {
+    event.preventDefault();
+    localStorage.setItem("season", "summer");
+    changeSeasonText("Summer");
+    window.location.href = "plants.html";
+  });
+
+  // Hændelseslytter for efterår
+  fall.addEventListener("click", function (event) {
+    event.preventDefault();
+    localStorage.setItem("season", "fall");
+    changeSeasonText("Fall");
+    window.location.href = "plants.html";
+  });
+
+  // Hændelseslytter for vinter
+  winter.addEventListener("click", function (event) {
+    event.preventDefault();
+    localStorage.setItem("season", "winter");
+    changeSeasonText("Winter");
+    window.location.href = "plants.html";
+  });
+
+  // Funktion til at ændre tekst i h1 baseret på valgt sæson
+  function changeSeasonText(season) {
+    const seasonHeading = document.querySelector("#smallplantsTemplate h1");
+    seasonHeading.textContent = season;
+  }
+});
