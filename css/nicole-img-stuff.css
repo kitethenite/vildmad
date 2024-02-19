@@ -1,0 +1,85 @@
+img {
+  width: 100%;
+}
+
+/* <div id="map-screen">
+  <div class="map-area">
+    <div class="map-bg"></div>
+    <div class="map-city"></div>
+    <div class="map-suburban"></div>
+    <div class="map-park"></div> */
+
+#map-screen {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-color: beige;
+  overflow: hidden;
+  container-type: inline-size;
+  border: 1.5cqw white solid;
+}
+
+.map-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.map-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/bg.svg);
+  background-size: cover;
+}
+
+.map-city-container {
+  position: absolute;
+  aspect-ratio: 873.41/598.42;
+  width: 45%;
+  top: -2%;
+  left: 0%;
+}
+
+.map-city {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/city.svg);
+  background-size: cover;
+}
+
+.map-suburban-container {
+  position: absolute;
+  aspect-ratio: 903.39/977.85;
+  width: 45%;
+  bottom: 0;
+  right: 0%;
+}
+
+.map-suburban {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/suburban.svg);
+  background-size: cover;
+}
+
+.map-park-container {
+    position: absolute;
+    aspect-ratio: 1135.82/936.15;
+    width: 56%;
+    bottom: -8%;
+    left: -1%;
+  }
+  
+  .map-park {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/park.svg);
+    background-size: cover;
+  }
+  
+  
