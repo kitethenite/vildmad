@@ -3,7 +3,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #fff;
+  background-color: #e2eee1;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -101,4 +101,35 @@ nav {
   nav.active .menu a {
     font-size: 24px;
   }
+}
+
+.footer2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #e2eee1;
+}
+
+.footer1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #e2eee1;
+}
+#instagram_logo {
+  background-image: url(/img/instagram_logo.webp);
+  aspect-ratio: 1/1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 4%;
+  position: absolute;
+  padding: 3px;
+}
+
+#formular_logo {
+  background-image: url();
+  aspect-ratio: 1/1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 4%;
+  position: absolute;
+  padding: 3px;
 }
