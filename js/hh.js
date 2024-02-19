@@ -14,6 +14,9 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((data) => {});
 });
 
+document.querySelector(".plant-name").textContent = plantName;
+document.querySelector(".plant-image").src = plantImageUrl;
+
 function showPlants(Plants) {
   Plants.forEach(plants);
 }
