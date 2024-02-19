@@ -44,9 +44,35 @@
 
     </header>
 
-    <main>
+    <main class="mainSignUp">
 
+        <section class="leftSection">
+            <h1 class="headline_signUp">Sign up</h1>
 
+            <span class="line_user"></span>
+
+            <form action="/submit-form" method="POST">
+                <label for="fullName">Full name:</label><br>
+                <input type="text" id="fullName" name="fullName"><br>
+
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username"><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password"><br><br>
+
+                <input type="submit" id="submit" value="Submit">
+            </form>
+        </section>
+
+        <section class="rightSection">
+            <div class="plant_img_signUp_wreapper1">
+                <img src="assets/img/plant_user.png" alt="picture of a plant and soil">
+            </div>
+        </section>
 
     </main>
 
