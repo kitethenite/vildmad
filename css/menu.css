@@ -2,9 +2,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 22px;
+  padding-right: 3%;
   background-color: #e2eee1;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .logo img {
@@ -90,7 +90,6 @@ nav {
     top: 60px;
     left: 0;
     width: 100%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     z-index: 1;
   }
 
@@ -100,6 +99,9 @@ nav {
 
   nav.active .menu a {
     font-size: 24px;
+  }
+  #formular_logo {
+    display: none;
   }
 }
 
@@ -115,21 +117,32 @@ nav {
   background-color: #e2eee1;
 }
 #instagram_logo {
-  background-image: url(/img/instagram_logo.webp);
+  background-image: url(/img/instagram.svg);
   aspect-ratio: 1/1;
   background-size: cover;
   background-repeat: no-repeat;
   width: 4%;
   position: absolute;
-  padding: 3px;
+  margin-top: 5px;
+}
+#facebook_logo {
+  background-image: url(/img/facebook.svg);
+  aspect-ratio: 1/1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 12%;
+  position: relative;
+  margin-top: 80px;
+  margin-bottom: 20px;
 }
 
 #formular_logo {
-  background-image: url();
+  background-image: url(/Img/profile.png);
   aspect-ratio: 1/1;
   background-size: cover;
   background-repeat: no-repeat;
   width: 4%;
   position: absolute;
-  padding: 3px;
+  margin-top: -17px;
+  margin-left: -22px;
 }
