@@ -94,12 +94,20 @@ winter.addEventListener("click", function (event) {
   window.location.href = "plants.html";
 });
 
-fetch(
-  "https://pitrqqwekcolglxqqngo.supabase.co/rest/v1/vild_mad?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBpdHJxcXdla2NvbGdseHFxbmdvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc2ODA5NjksImV4cCI6MjAyMzI1Njk2OX0.84FjJ7ILcIkugWA0eYWDBVy-ChVHdqLbYHSfHxmv1eo"
-)
-  .then((res) => res.json())
-  .then((data) => console.log(data))
-  .catch((error) => console.error("Error fetching data:", error));
+const url = "https://pitrqqwekcolglxqqngo.supabase.co/rest/v1/vild_mad?id=eq.3";
+
+const key =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBpdHJxcXdla2NvbGdseHFxbmdvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc2ODA5NjksImV4cCI6MjAyMzI1Njk2OX0.84FjJ7ILcIkugWA0eYWDBVy-ChVHdqLbYHSfHxmv1eo";
+//GET /people?select=fullName:full_name,birthDate:birth_date HTTP/1.1
+
+fetch(url, {
+  method: "GET",
+  headers: {
+    apikey: key,
+  },
+})
+  .then((response) => response.json())
+  .then((data) => showData(data));
 
 function showPlants(plants) {
   plants.forEach((plant) => {
