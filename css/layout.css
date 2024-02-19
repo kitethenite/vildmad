@@ -20,7 +20,7 @@ main {
 }
 
 @media (max-width: 800px) {
-  .seasom_img {
+  .season_img ol {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 10px;
@@ -28,7 +28,7 @@ main {
 }
 
 @media (min-width: 800px) {
-  .seasom_img {
+  .season_img ol {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
