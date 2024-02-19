@@ -1,4 +1,4 @@
-//plants //
+//biotop //
 document.addEventListener("DOMContentLoaded", function () {
   const url = "https://pitrqqwekcolglxqqngo.supabase.co/rest/v1/vild_mad";
   const key =
@@ -11,11 +11,12 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   })
     .then((response) => response.json())
-    .then((data) => {
-      // Opdater DOM'en baseret på data fra API'en
-      showData(data);
-    });
+    .then((data) => {});
 });
+
+function showPlants(Plants) {
+  Plants.forEach(plants);
+}
 
 function showData(data) {
   // Hent reference til din template
