@@ -43,6 +43,12 @@ img {
   width: 45%;
   top: -2%;
   left: 0%;
+  transition: 0.2s;
+}
+
+.map-city-container:hover {
+  scale: 1.05;
+  transition: 0.2s;
 }
 
 .map-city {
@@ -58,7 +64,10 @@ img {
   width: 45%;
   bottom: 0;
   right: 0%;
+  transition: 0.2s;
 }
+
+
 
 .map-suburban {
   width: 100%;
@@ -67,19 +76,28 @@ img {
   background-size: cover;
 }
 
+.map-suburban-container:hover{
+    scale: 1.05;
+    transition: 0.2s;
+  }
+  
 .map-park-container {
-    position: absolute;
-    aspect-ratio: 1135.82/936.15;
-    width: 56%;
-    bottom: -8%;
-    left: -1%;
+  position: absolute;
+  aspect-ratio: 1135.82/936.15;
+  width: 56%;
+  bottom: -8%;
+  left: -1%;
+  transition: 0.2s;
+}
+
+.map-park {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/park.svg);
+  background-size: cover;
+}
+
+.map-park-container:hover{
+    scale: 1.05;
+    transition: 0.2s;
   }
-  
-  .map-park {
-    width: 100%;
-    height: 100%;
-    background-image: url(../img/park.svg);
-    background-size: cover;
-  }
-  
-  
