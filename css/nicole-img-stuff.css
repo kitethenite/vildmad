@@ -9,7 +9,7 @@ img {
   background-color: beige;
   overflow: hidden;
   container-type: inline-size;
-  border: 1.5cqw white solid;
+  /* border: 1.5cqw white solid; */
 }
 
 .map-area {

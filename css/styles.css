@@ -1,4 +1,3 @@
-
 /* FONT FACE HEADER
 font-family: "Montserrat", sans-serif;
 font-optical-sizing: auto;
@@ -43,7 +42,49 @@ p {
 }
 
 /* index.html */
+.index-map-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+}
 
+.index-map-container div:first-of-type {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/full-img.svg);
+  background-size: cover;
+}
+
+.start-btn-container {
+  aspect-ratio: 827.12/188.42;
+  position: absolute;
+  width: 40%;
+  top: 60%;
+  left: 30%;
+}
+
+.start-btn-container div:first-of-type {
+  background-image: url(../img/startbtn.svg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  animation: floating 1s ease-in infinite alternate-reverse;
+}
+.start-btn-container:hover {
+  scale: 1.1;
+}
+
+@keyframes floating {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
 /* tools.html */
 
 /* forage.html */
@@ -54,14 +95,14 @@ h1 {
 }
 
 .hidden {
- display: none;
-} 
+  display: none;
+}
 
 /* plants.html */
 
 /* plant_info.html */
 .plant-image {
-width: 200px;
+  width: 200px;
 }
 /* user.html */
 .headline_getStarted {
@@ -163,4 +204,3 @@ footer h4 {
   font-family: "Karla", sans-serif;
   font-size: 18px;
 }
-
