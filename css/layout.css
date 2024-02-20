@@ -1,9 +1,12 @@
+
 /* RESET */
-body * {
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 main {
   max-width: 1350px;
   margin: 0 auto;
@@ -125,4 +128,29 @@ label {
     background-color: #fdfaf4;
     box-sizing: border-box; /* Include padding in width calculation */
   }
+}
+
+/* Nicoles plant.html grid */
+.plants-grid main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2em;
+}
+
+.plants-grid .title {
+  grid-column: 1/-1;
+}
+
+.plants-grid img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.plants-grid article {
+  background-color: rgb(129, 182, 155);
+  border: 1px solid black;
+  padding: 1rem;
+
 }
