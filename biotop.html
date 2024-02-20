@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/menu.css" />
   </head>
-  <body>
+  <body class="plants-grid">
     <header>
       <div class="logo">
         <a href="/">
@@ -93,21 +93,18 @@
           </p>
         </section>
       </div>
-      <div>
-        <h2>Seasons</h2>
-        <a href="plants.html?seasons=spring"><img src="" alt="spring" /></a>
-        <a href="plants.html?seasons=summer"
-          ><img src="" alt="summer" id="btn-summer"
-        /></a>
-        <a href="plants.html?seasons=autumn"
-          ><img src="" alt="autumn" id="btn-autumn"
-        /></a>
-        <a href="plants.html?seasons=winter"
-          ><img src="" alt="winter" id="btn-winter"
-        /></a>
-      </div>
+  
+    <template class="plants-template">
+      <article>
+          <a href="plant_info.html" class="plant-link">
+        <img src="#" alt="Image of said flower" />
+        <h2>Title</h2>
+        <p class="latin-name"><em>latin name</em></p>
+      </a>
+      </article>
+    </template>
+  </div>
     </main>
-
     <footer>
       <hr />
       <div class="footer2">
@@ -135,7 +132,6 @@
               <div id="facebook_logo"></div>
             </a>
           </div>
-        </div>
       </div>
     </footer>
     <script src="js/script.js"></script>
