@@ -1,12 +1,13 @@
-// This works as planned now
+const urlParams = new URLSearchParams(window.location.search);
+const id = urlParams.get("id");
 
 const url =
-  "https://pitrqqwekcolglxqqngo.supabase.co/rest/v1/vild_mad?id=eq.12";
+`https://pitrqqwekcolglxqqngo.supabase.co/rest/v1/vild_mad?id=eq.${id}`
 
 const key =
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBpdHJxcXdla2NvbGdseHFxbmdvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc2ODA5NjksImV4cCI6MjAyMzI1Njk2OX0.84FjJ7ILcIkugWA0eYWDBVy-ChVHdqLbYHSfHxmv1eo";
 
-//GET /people?select=fullName:full_name,birthDate:birth_date HTTP/1.1
+
 
 fetch(url, {
   method: "GET",
@@ -17,21 +18,10 @@ fetch(url, {
   .then((response) => response.json())
   .then((data) => showData(data));
 
-//denna visar alla object från json, vart för sig.
-// function showData(data) {
-//     console.log(data, "connected to showData now");
-//   console.table(data);
-
-// //   <h1 class="plant-name">plant info</h1>
-// //   <p class="description"></p>
-
-// document.querySelector(".plant-name").textContent = data.name;
-//   document.querySelector(".description").textContent = data.description;
-// }
 
 function showData(data) {
   console.log(data); // Check if data is accessible within this function
-  console.table(data, "connected to showData now");
+  // console.table(data, "connected to showData now");
 
   // Access the first object in the array
   const plantInfo = data[0];
@@ -80,5 +70,3 @@ function showData(data) {
   // Update the DOM with the season information
   document.querySelector(".season-info").textContent = seasonString;
 }
-
-/////////
