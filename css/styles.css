@@ -1,0 +1,166 @@
+
+/* FONT FACE HEADER
+font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-weight: 600;
+font-style: normal; */
+
+/* FONT FACE PARAGRAF
+font-family: "Karla", sans-serif;
+font-optical-sizing: auto;
+font-weight: 300;
+font-style: normal; */
+
+header {
+  font-family: "Karla", sans-serif;
+  font-size: 1.2rem;
+}
+
+body {
+  background-color: #e2eee1;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  color: #513e36;
+}
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #513e36;
+}
+
+p {
+  font-family: "Karla", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 30px;
+  letter-spacing: 2px;
+  color: #513e36;
+}
+
+/* index.html */
+
+/* tools.html */
+
+/* forage.html */
+
+/* biotop.html */
+h1 {
+  text-transform: capitalize;
+}
+
+.hidden {
+ display: none;
+} 
+
+/* plants.html */
+
+/* plant_info.html */
+.plant-image {
+width: 200px;
+}
+/* user.html */
+.headline_getStarted {
+  font-size: 5rem;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+}
+#signUpButton,
+#signInButton {
+  width: 55%;
+  background-color: #f27d52;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 2rem;
+  font-family: "Karla", sans-serif;
+  letter-spacing: 2px;
+}
+.plant_user_img img {
+  width: 100%;
+}
+
+/* sign_in.html */
+.headline_signIn {
+  font-size: 5rem;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+}
+.line_user {
+  border-bottom: 2px solid #513e36;
+  width: 70%;
+  display: block;
+  padding-bottom: 5%;
+}
+
+/* sign_up.html */
+.headline_signUp {
+  font-size: 5rem;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+}
+.plant_img_signUp_wreapper1 img {
+  width: 100%;
+}
+label {
+  font-size: 1.5rem;
+  font-family: "Karla", sans-serif;
+  letter-spacing: 2px;
+}
+input {
+  font-size: 1.2rem;
+  font-family: "Karla", sans-serif;
+  letter-spacing: 2px;
+}
+#fullName,
+#username,
+#email,
+#password {
+  font-size: 1rem;
+  font-family: "Karla", sans-serif;
+  letter-spacing: 2px;
+  padding-bottom: 2%;
+  background-color: #fdfaf4;
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
+  border: 1px solid #000; /* Tynd sort streg */
+  border-radius: 4px; /* Runde hjørner */
+  box-sizing: border-box; /* Sørg for at padding og border indgår i elementets totale bredde */
+}
+
+/* Style for submit button */
+input[type="submit"] {
+  width: 100%;
+  background-color: #f27d52;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Change submit button color on hover */
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+@media screen and (min-width: 850px) {
+  .background_plant_user_img_wrapper1 img {
+    width: 100%;
+  }
+}
+
+footer h4 {
+  font-family: "Karla", sans-serif;
+  font-size: 18px;
+}
+
