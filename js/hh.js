@@ -1,36 +1,40 @@
+const urlParams = new URLSearchParams(window.location.search);
+const tag = urlParams.get("tag");
+
 //biotop //
-document.addEventListener("DOMContentLoaded", function () {
-  const url = "https://pitrqqwekcolglxqqngo.supabase.co/rest/v1/vild_mad";
-  const key =
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBpdHJxcXdla2NvbGdseHFxbmdvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc2ODA5NjksImV4cCI6MjAyMzI1Njk2OX0.84FjJ7ILcIkugWA0eYWDBVy-ChVHdqLbYHSfHxmv1eo";
 
-  fetch(url, {
-    method: "GET",
-    headers: {
-      apikey: key,
-    },
+const url = "https://pitrqqwekcolglxqqngo.supabase.co/rest/v1/vild_mad";
+const key =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBpdHJxcXdla2NvbGdseHFxbmdvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc2ODA5NjksImV4cCI6MjAyMzI1Njk2OX0.84FjJ7ILcIkugWA0eYWDBVy-ChVHdqLbYHSfHxmv1eo";
+
+fetch(url, {
+  method: "GET",
+  headers: {
+    apikey: key,
+  },
+})
+  .then((response) => response.json())
+  .then((data) => {
+    // Update the title element with the tag value
+    document.querySelector(".title").textContent = tag;
   })
-    .then((response) => response.json())
-    .then((data) => {});
-});
+  .catch((error) => {
+    console.error("Error fetching data:", error);
+  });
 
-document.querySelector(".plant-name").textContent = plantName;
-document.querySelector(".plant-image").src = plantImageUrl;
+//function showPlants(plants) {
+//const parent = document.querySelector(".grid_plants");
 
-function showPlants(Plants) {
-  Plants.forEach(plants);
-}
+//plants.forEach((plant) => {
+//  const template = document.querySelector("#smallplantsTemplate");
+//const copy = template.content.cloneNode(true);
 
-function showData(data) {
-  // Hent reference til din template
-  const template = document.querySelector("#smallplantsTemplate");
+//const plantName = copy.querySelector(".plants-name");
+// const plantImage = copy.querySelector(".plants-image");
 
-  // Klone template-elementet
-  const copy = smallplantsTemplate.content.cloneNode(true);
+// plantName.textContent = plant.name;
+//plantImage.src = plant.image;
 
-  // Find den overordnede container, hvor du vil indsætte kopien
-  const parent = document.querySelector(".grid_plants");
-
-  // Indsæt kopien i den overordnede container
-  parent.appendChild(copy);
-}
+//  parent.appendChild(copy);
+// });
+//}
