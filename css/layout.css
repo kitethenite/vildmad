@@ -15,6 +15,22 @@ main {
 
 /* tools.html */
 
+.tools {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2em;
+  margin-top: 3rem;
+}
+
+.tools img {
+  width: 30%;
+  object-fit: cover;
+}
+
+.tools h2 {
+  padding-top: 3%;
+}
+
 /* forage.html */
 
 /* biotop.html */
@@ -50,6 +66,9 @@ main {
 }
 
 .in-season {
+  grid-column: -1/1;
+}
+.out-of-season {
   grid-column: -1/1;
 }
 
