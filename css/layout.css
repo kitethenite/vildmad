@@ -17,13 +17,20 @@ main {
 
 .tools {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 2em;
-  margin-top: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 8rem;
+}
+
+.tools {
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
 }
 
 .tools img {
-  width: 30%;
+  width: 46%;
   object-fit: cover;
 }
 
@@ -31,6 +38,20 @@ main {
   padding-top: 3%;
 }
 
+.tool3 img {
+  width: 20%;
+}
+.tool4 img {
+  width: 20%;
+}
+
+.tools0 h1 {
+  margin-top: 5rem;
+}
+
+.tools0 p {
+  margin-top: 1%;
+}
 /* forage.html */
 
 /* biotop.html */
