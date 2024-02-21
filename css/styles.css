@@ -1,4 +1,3 @@
-
 /* FONT FACE HEADER
 font-family: "Montserrat", sans-serif;
 font-optical-sizing: auto;
@@ -54,14 +53,21 @@ h1 {
 }
 
 .hidden {
- display: none;
-} 
+  display: none;
+}
 
 /* plants.html */
 
 /* plant_info.html */
-.plant-image {
-width: 200px;
+@media screen and (max-width: 850px) {
+  .plant-image {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 850px) {
+  .plant-image {
+    width: 450px;
+  }
 }
 /* user.html */
 .headline_getStarted {
@@ -163,4 +169,3 @@ footer h4 {
   font-family: "Karla", sans-serif;
   font-size: 18px;
 }
-

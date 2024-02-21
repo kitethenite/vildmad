@@ -53,6 +53,55 @@ main {
 /* plants.html */
 
 /* plant_info.html */
+@media screen and (max-width: 800px) {
+  .plant_img {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .plant-image {
+    width: auto;
+    border-radius: 100%;
+  }
+
+  .plant_tekst {
+    padding: 2%;
+  }
+
+  .season-info {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .plant_info {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 5px;
+    padding-bottom: 15px;
+  }
+
+  .plant_img {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .plant-image {
+    width: auto;
+    border-radius: 100%;
+  }
+
+  .plant_tekst {
+    padding: 5%;
+  }
+
+  .season-info {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+}
 
 /* user.html */
 .user_wrapper1 {
