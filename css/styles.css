@@ -101,7 +101,6 @@ h1 {
 /* plants.html */
 
 /* plant_info.html */
-.plant-design
 @media screen and (max-width: 850px) {
   .plant-image {
     width: 300px;
@@ -111,10 +110,6 @@ h1 {
   .plant-image {
     width: 450px;
   }
-
-.plant-image {
-  width: 200px;
-
 }
 /* user.html */
 .headline_getStarted {
