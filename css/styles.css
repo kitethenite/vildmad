@@ -210,4 +210,5 @@ input[type="submit"]:hover {
 footer h4 {
   font-family: "Karla", sans-serif;
   font-size: 18px;
+  text-align: center;
 }

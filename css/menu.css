@@ -108,6 +108,7 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   background-color: #e2eee1;
+  text-align: center;
 }
 
 .footer1 {
@@ -123,6 +124,7 @@ nav {
   width: 4%;
   position: absolute;
   margin-top: 5px;
+  margin-left: 15%;
 }
 #facebook_logo {
   background-image: url(/img/facebook.svg);
@@ -131,8 +133,9 @@ nav {
   background-repeat: no-repeat;
   width: 12%;
   position: relative;
-  margin-top: 80px;
   margin-bottom: 20px;
+  margin-top: 80px;
+  margin-left: 45%;
 }
 
 #formular_logo {
