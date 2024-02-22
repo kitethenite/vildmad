@@ -6,16 +6,15 @@ document.querySelector(".title").textContent = tag;
 
 // bestämmer vilken biotop-text som visas
 
-if (tag === 'city') {
-    document.querySelector('.biotope-city').classList.remove("hidden");
-} else if (tag === 'suburban') {
-    document.querySelector('.biotope-suburban').classList.remove("hidden");
-} else if (tag === 'park') {
-    document.querySelector('.biotope-park').classList.remove("hidden");
+if (tag === "city") {
+  document.querySelector(".biotope-city").classList.remove("hidden");
+} else if (tag === "suburban") {
+  document.querySelector(".biotope-suburban").classList.remove("hidden");
+} else if (tag === "park") {
+  document.querySelector(".biotope-park").classList.remove("hidden");
 }
 
 // merger plants.html till biotop.html
-
 
 // hämtar data från API
 const url = "https://pitrqqwekcolglxqqngo.supabase.co/rest/v1/vild_mad";
@@ -40,20 +39,22 @@ function showPlants(plants) {
 function showPlant(plant) {
   console.log(plant);
 
-    // fånga upp template
-    const template = document.querySelector("template").content;
+  // fånga upp template
+  const template = document.querySelector("template").content;
 
-    //viktigt att skriva const clone innan cloneNode!
-    const clone = template.cloneNode(true);
-  
-    const plantImageUrl = plant.image;
-  
-    clone.querySelector("img").src = plantImageUrl;
-    clone.querySelector("h2").textContent = plant.name;
-    clone.querySelector(".latin-name").textContent = plant.latin_name;
-  
-// här ska man trycka på planta för att komma in till plant-info
-clone.querySelector(".plant-link").setAttribute("href", `plant_info.html?id=${plant.id}`);
+  //viktigt att skriva const clone innan cloneNode!
+  const clone = template.cloneNode(true);
 
-    document.querySelector("main").appendChild(clone);
+  const plantImageUrl = plant.image;
+
+  clone.querySelector("img").src = plantImageUrl;
+  clone.querySelector("h2").textContent = plant.name;
+  clone.querySelector(".latin-name").textContent = plant.latin_name;
+
+  // här ska man trycka på planta för att komma in till plant-info
+  clone
+    .querySelector(".plant-link")
+    .setAttribute("href", `plant_info.html?id=${plant.id}`);
+
+  document.querySelector("main").appendChild(clone);
 }
