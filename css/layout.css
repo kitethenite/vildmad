@@ -9,8 +9,7 @@
 main {
   /* max-width: 1350px; */
   /* margin: 0 auto; */
-padding: 0 3em;
-
+  padding: 0 3em;
 }
 
 /* index.html */
@@ -86,7 +85,6 @@ padding: 0 3em;
 
 .plants-grid article {
   padding: 1rem;
-  padding-left: 8rem;
 }
 
 .in-season {
