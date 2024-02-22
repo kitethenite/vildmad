@@ -4,15 +4,16 @@ font-optical-sizing: auto;
 font-weight: 600;
 font-style: normal; */
 
-/* FONT FACE PARAGRAF
-font-family: "Karla", sans-serif;
-font-optical-sizing: auto;
-font-weight: 300;
-font-style: normal; */
+/* FONT FACE PARAGRAF{
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+/* } */
 
 header {
   font-family: "Karla", sans-serif;
-font-size: calc(15px + 0.390625vw);
+  font-size: calc(15px + 0.390625vw);
 }
 
 body {

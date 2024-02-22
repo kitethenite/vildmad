@@ -1,83 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;1,300&family=Montserrat:ital,wght@0,600;1,600&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Karla:ital@0;1&family=Montserrat:ital,wght@0,600;1,600&display=swap"
+    rel="stylesheet">
 
-    <title>Sign in</title>
+  <title>Sign in</title>
 
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/menu.css" />
-    <link rel="stylesheet" href="css/menuUser.css" />
-  </head>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/menu.css" />
+  <link rel="stylesheet" href="css/menuUser.css" />
+  <link rel="icon" href="favicon_io-2/favicon.ico" />
+</head>
 
-  <body>
-    <header class="headerSignUp">
-      <section class="headerLeft">
-        <div class="logo">
-          <a href="/">
-            <img src="assets/logo.svg" alt="Logo" />
-          </a>
+<body>
+  <header class="headerSignUp">
+    <section class="headerLeft">
+      <div class="logo">
+        <a href="/">
+          <img src="assets/logo.svg" alt="Logo" />
+        </a>
+      </div>
+    </section>
+    <section class="headerRight">
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tools.html">Tools</a></li>
+          <li><a href="forage.html">Forage</a></li>
+          <li>
+            <div id="formular">
+              <a href="user.html">
+                <div id="formular_logo"></div>
+              </a>
+            </div>
+          </li>
+        </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
         </div>
-      </section>
-      <section class="headerRight">
-        <nav>
-          <ul class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="tools.html">Tools</a></li>
-            <li><a href="forage.html">Forage</a></li>
-            <li>
-              <div id="formular">
-                <a href="user.html">
-                  <div id="formular_logo"></div>
-                </a>
-              </div>
-            </li>
-          </ul>
-          <div class="burger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
-        </nav>
-      </section>
-    </header>
+      </nav>
+    </section>
+  </header>
 
-    <main class="mainSignIn">
-      <section class="leftSection_signIn">
-        <div class="plant_img_signUp_wreapper1">
-          <img
-            src="assets/img/plant_user.png"
-            alt="picture of a plant and soil"
-          />
-        </div>
-      </section>
+  <main class="mainSignIn">
+    <section class="leftSection_signIn">
+      <div class="plant_img_signUp_wreapper1">
+        <img src="assets/img/plant_user.png" alt="picture of a plant and soil" />
+      </div>
+    </section>
 
-      <section class="rightSection_signIn">
-        <h1 class="headline_signIn">Sign in</h1>
+    <section class="rightSection_signIn">
+      <h1 class="headline_signIn">Sign in</h1>
 
-        <span class="line_user"></span>
+      <span class="line_user"></span>
 
-        <p class="p_txtSignIn">
-          Already have an account? Welcome back!
-          <br />
-          <br />
-        </p>
+      <p class="p_txtSignIn">
+        Already have an account? Welcome back!
+        <br />
+        <br />
+      </p>
 
-        <form name="login" method="POST" netlify>
-          <label for="username">Username:</label><br />
-          <input type="text" id="username" name="username" /><br />
+      <form name="login" method="POST" netlify>
+        <label for="username">Username:</label><br />
+        <input type="text" id="username" name="username" /><br />
 
-          <label for="password">Password:</label><br />
-          <input type="password" id="password" name="password" /><br /><br />
+        <label for="password">Password:</label><br />
+        <input type="password" id="password" name="password" /><br /><br />
 
         <input type="submit" id="submit" value="Submit" />
       </form>
@@ -101,15 +98,15 @@
         <h4>Social media</h4>
         <div>
           <div class="instagram">
-          <a href="https://www.instagram.com/vildmaddk/" target="_blank">
-            <div id="instagram_logo"></div>
-          </a>
-        </div>
-        <div class="facebook">
-          <a href="https://www.facebook.com/vildmaddk" target="_blank">
-            <div id="facebook_logo"></div>
+            <a href="https://www.instagram.com/vildmaddk/" target="_blank">
+              <div id="instagram_logo"></div>
+            </a>
           </div>
-        
+          <div class="facebook">
+            <a href="https://www.facebook.com/vildmaddk" target="_blank">
+              <div id="facebook_logo"></div>
+          </div>
+
           </a>
         </div>
       </div>
