@@ -78,7 +78,7 @@ main {
   grid-column: 1/-1;
 }
 
-.plants-grid img {
+.plants-grid main img {
   width: 100%;
   aspect-ratio: 1/1;
   object-fit: cover;
