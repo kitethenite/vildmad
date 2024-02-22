@@ -155,4 +155,12 @@ nav {
     margin-top: -12px;
     margin-left: 296px;
   }
+  #instagram_logo {
+    width: 30px;
+  }
+
+  #facebook_logo {
+    width: 30px;
+    margin-top: 50px;
+  }
 }
