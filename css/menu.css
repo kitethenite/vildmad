@@ -114,6 +114,7 @@ footer {
   background-repeat: no-repeat;
   width: 36px;
   margin-top: -10px;
+  
 }
 #facebook_logo {
   background-image: url(/img/facebook.svg);
@@ -125,7 +126,7 @@ footer {
 }
 
 #formular_logo {
-  background-image: url(/Img/profile.png);
+  background-image: url(/img/profile.png);
   aspect-ratio: 1/1;
   background-size: cover;
   background-repeat: no-repeat;
@@ -175,11 +176,14 @@ footer {
   }
 
   #formular_logo {
-    background-image: url(/Img/profile.png);
+    background-image: url(/img/profile.png);
     aspect-ratio: 1/1;
     background-size: cover;
     background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
   }
+
   #instagram_logo {
     width: 30px;
   }
