@@ -154,10 +154,6 @@ h1 {
   width: 100%;
 }
 
-.userMain {
-  background-color: #fdfaf4;
-}
-
 /* sign_in.html */
 .headline_signIn {
   font-size: 5rem;
@@ -300,5 +296,4 @@ input[type="submit"]:hover {
 footer h4 {
   font-family: "Karla", sans-serif;
   font-size: 18px;
-
 }

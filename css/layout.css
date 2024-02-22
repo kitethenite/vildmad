@@ -27,8 +27,8 @@ main {
 }
 
 .tools {
- display: grid;
- grid-template-columns: repeat(4, 1fr);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .tools img {
@@ -50,7 +50,6 @@ main {
 .tools0 p {
   margin-top: 1%;
 }
-
 
 /* biotop.html */
 .plants-grid main {
@@ -149,17 +148,15 @@ main {
   .tools {
     grid-template-columns: repeat(2, 1fr);
     gap: 3em;
-   }
+  }
 
-   .tools img {
+  .tools img {
     max-width: 30%;
     min-width: 30px;
     display: block;
     margin: auto;
     padding: 0 0 1em;
-   }
-
-
+  }
 }
 
 @media screen and (min-width: 800px) {
@@ -182,8 +179,8 @@ main {
   }
 
   .plant_tekst {
-  margin: auto;
-  max-width: 600px;
+    margin: auto;
+    max-width: 600px;
   }
 
   .season-info {
@@ -274,7 +271,6 @@ label {
   .userSectionLeft {
     padding-top: 2%;
     width: 50%;
-    background-color: #fdfaf4;
     display: flex;
     flex-direction: column;
     justify-content: center;
