@@ -60,6 +60,51 @@ nav {
 .burger {
   display: none;
 }
+
+.footer2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #e2eee1;
+  text-align: center;
+}
+
+.footer1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #e2eee1;
+}
+#instagram_logo {
+  background-image: url(/img/instagram.svg);
+  aspect-ratio: 1/1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 4%;
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 15%;
+}
+#facebook_logo {
+  background-image: url(/img/facebook.svg);
+  aspect-ratio: 1/1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 12%;
+  position: relative;
+  margin-bottom: 20px;
+  margin-top: 80px;
+  margin-left: 45%;
+}
+
+#formular_logo {
+  background-image: url(/Img/profile.png);
+  aspect-ratio: 1/1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 45px;
+  height: 35px;
+  margin-top: -12px;
+}
+
 @media screen and (max-width: 800px) {
   .menu {
     display: none;
@@ -84,7 +129,7 @@ nav {
 
   nav.active .menu {
     display: block;
-    background-color: #fff;
+    background-color: #e2eee1;
     position: absolute;
     top: 60px;
     left: 0;
@@ -99,49 +144,15 @@ nav {
   nav.active .menu a {
     font-size: 24px;
   }
+
   #formular_logo {
-    display: none;
+    background-image: url(/Img/profile.png);
+    aspect-ratio: 1/1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 35px;
+    margin-top: -12px;
+    margin-left: 296px;
   }
-}
-
-.footer2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  background-color: #e2eee1;
-}
-
-.footer1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-color: #e2eee1;
-}
-#instagram_logo {
-  background-image: url(/img/instagram.svg);
-  aspect-ratio: 1/1;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 4%;
-  position: absolute;
-  margin-top: 5px;
-}
-#facebook_logo {
-  background-image: url(/img/facebook.svg);
-  aspect-ratio: 1/1;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 12%;
-  position: relative;
-  margin-top: 80px;
-  margin-bottom: 20px;
-}
-
-#formular_logo {
-  background-image: url(/Img/profile.png);
-  aspect-ratio: 1/1;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 4%;
-  position: absolute;
-  margin-top: -17px;
-  margin-left: -22px;
 }

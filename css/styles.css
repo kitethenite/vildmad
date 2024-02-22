@@ -101,15 +101,26 @@ h1 {
 /* plants.html */
 
 /* plant_info.html */
-.plant-image {
-  width: 200px;
+@media screen and (max-width: 850px) {
+  .plant-image {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 850px) {
+  .plant-image {
+    width: 450px;
+  }
 }
 /* user.html */
+.headline_animation {
+  display: inline-block;
+}
 .headline_getStarted {
   font-size: 5rem;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 2px;
 }
+
 #signUpButton,
 #signInButton {
   width: 55%;
@@ -127,6 +138,12 @@ h1 {
 .plant_user_img img {
   width: 100%;
 }
+.headerUser,
+.logoUser,
+.userMain,
+.footerUser {
+  background-color: #fdfaf4;
+}
 
 /* sign_in.html */
 .headline_signIn {
@@ -136,7 +153,7 @@ h1 {
 }
 .line_user {
   border-bottom: 2px solid #513e36;
-  width: 70%;
+  width: 90%;
   display: block;
   padding-bottom: 5%;
 }
@@ -147,11 +164,15 @@ h1 {
   font-family: "Montserrat", sans-serif;
   letter-spacing: 2px;
 }
+.p_txtSignUp {
+  font-size: 1.5rem;
+  padding-top: 2%;
+}
 .plant_img_signUp_wreapper1 img {
   width: 100%;
 }
 label {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: "Karla", sans-serif;
   letter-spacing: 2px;
 }
@@ -170,8 +191,8 @@ input {
   padding-bottom: 2%;
   background-color: #fdfaf4;
   width: 100%;
-  padding: 10px;
-  margin: 20px 0;
+  padding: 8px;
+  margin: 15px 0;
   border: 1px solid #000; /* Tynd sort streg */
   border-radius: 4px; /* Runde hjørner */
   box-sizing: border-box; /* Sørg for at padding og border indgår i elementets totale bredde */
@@ -194,13 +215,77 @@ input[type="submit"]:hover {
   background-color: #45a049;
 }
 
-@media screen and (min-width: 850px) {
+.p_txtSignUp {
+  text-align: left;
+  margin-right: 0%;
+  margin-left: 0%;
+}
+.p_txtSignIn {
+  font-size: 1.5rem;
+  padding-top: 2%;
+}
+
+@media screen and (min-width: 1025px) {
+  /* user.html */
+  .headline_getStarted {
+    font-size: 5rem;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 2px;
+    border-right: 10px solid #f27d52;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(29), cursor 0.5s step-end infinite alternate;
+  }
+  /* blinking cursor */
+  @keyframes cursor {
+    50% {
+      border-color: transparent;
+    }
+  }
+  /* typing animation */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+
   .background_plant_user_img_wrapper1 img {
     width: 100%;
+  }
+  #signInButton:hover {
+    background-color: green;
+    color: white; /* Ændrer tekstfarven til hvid for bedre synlighed */
+  }
+
+  /* Tilføj en grøn baggrundsfarve til SignUp-knappen, når musen hoverer over den */
+  #signUpButton:hover {
+    background-color: green;
+    color: white; /* Ændrer tekstfarven til hvid for bedre synlighed */
+  }
+
+  /* sign_up.html  */
+  .p_txtSignUp {
+    text-align: center;
+    margin-right: 13%;
+    margin-left: 14%;
+  }
+
+  /* sign_in.html */
+
+  .line_user {
+    width: 70%;
+  }
+
+  .p_txtSignUp {
+    text-align: left;
+    margin-right: 13%;
+    margin-left: 15%;
   }
 }
 
 footer h4 {
   font-family: "Karla", sans-serif;
   font-size: 18px;
+  text-align: center;
 }

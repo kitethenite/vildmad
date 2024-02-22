@@ -1,36 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;1,300&family=Montserrat:ital,wght@0,600;1,600&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;1,300&family=Montserrat:ital,wght@0,600;1,600&display=swap"
+    rel="stylesheet" />
 
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/menu.css" />
-  </head>
+  <title>Profile</title>
 
-  <body>
-    <header>
-      <div class="logo">
-        <a href="/">
-          <img src="logo.png" alt="Logo" />
-        </a>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/menu.css" />
+  <link rel="stylesheet" href="css/menuUser.css" />
+</head>
+
+<body>
+  <header class="headerUser">
+    <section class="headerLeftUser">
+      <div class="logoUser">
+        <div class="logo">
+          <a href="/">
+            <img src="logo.png" alt="Logo" />
+          </a>
+        </div>
       </div>
+    </section>
+    <section class="headerRightUser">
       <nav>
         <ul class="menu">
           <li><a href="index.html">Home</a></li>
-          <li><a href="tools.html">Tools</a></li>
           <li><a href="forage.html">Forage</a></li>
-          <li><a href="biotop.html">Biotop</a></li>
+          <li><a href="biotop.html">Biotope</a></li>
           <li>
             <div id="formular">
               <a href="user.html">
@@ -45,32 +50,63 @@
           <div class="line"></div>
         </div>
       </nav>
-    </header>
+    </section>
+  </header>
 
-    <main class="userMain">
-      <section class="userSectionLeft">
-        <h1 class="headline_getStarted">Get started!</h1>
-        <button id="signInButton" onclick="window.location.href='sign_in.html'">
-          Sign in
-        </button>
-        <button id="signUpButton" onclick="window.location.href='sign_up.html'">
-          Sign up
-        </button>
-      </section>
+  <main class="userMain">
+    <section class="userSectionLeft">
+      <div class="headline_animation">
+        <h1 class="headline_getStarted typing-animation">Get started!</h1>
+      </div>
+      <button id="signInButton" onclick="window.location.href='sign_in.html'">
+        Sign in
+      </button>
+      <button id="signUpButton" onclick="window.location.href='sign_up.html'">
+        Sign up
+      </button>
+    </section>
 
-      <section class="userSectionRight">
-        <div class="plant_user_img">
-          <img
-            src="assets/img/plant_user.png"
-            alt="picture of a plant and soil"
-          />
+    <section class="userSectionRight">
+      <div class="plant_user_img">
+        <img src="assets/img/plant_user.png" alt="picture of a plant and soil" />
+      </div>
+    </section>
+  </main>
+
+  <footer class="footerUser">
+    <hr />
+    <div class="footer2">
+      <div>
+        <h4>Team 2</h4>
+        <p>Ane</p>
+        <p>Asta</p>
+        <p>Astrid</p>
+        <p>Nicole</p>
+      </div>
+      <div>
+        <h4>2024</h4>
+        <p>2.semester</p>
+        <p>KEA</p>
+      </div>
+      <div>
+        <h4>Sosiale Medier</h4>
+        <div id="instagram">
+          <a href="https://www.instagram.com/vildmaddk/" target="_blank">
+            <div id="instagram_logo"></div>
+          </a>
         </div>
-      </section>
-    </main>
+        <div id="facebook">
+          <a href="https://www.facebook.com/vildmaddk" target="_blank">
+            <div id="facebook_logo"></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    <footer></footer>
+  <script src="js/script.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/animation.js"></script>
+</body>
 
-    <script src="js/script.js"></script>
-    <script src="js/menu.js"></script>
-  </body>
 </html>
