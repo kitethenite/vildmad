@@ -25,10 +25,17 @@ h1 {
   font-size: 3rem;
   color: #513e36;
 }
+
 h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 2.5rem;
+  color: #513e36;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(16px, calc(20px + (36 - 20) * (100vw - 768px)/(1920 - 768)), 48px);
   color: #513e36;
 }
 
@@ -39,6 +46,10 @@ p {
   line-height: 30px;
   letter-spacing: 2px;
   color: #513e36;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* index.html */
@@ -111,6 +122,7 @@ h1 {
     width: 450px;
   }
 }
+
 /* user.html */
 .headline_animation {
   display: inline-block;
