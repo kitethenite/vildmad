@@ -9,8 +9,7 @@
 main {
   /* max-width: 1350px; */
   /* margin: 0 auto; */
-padding: 0 3em;
-
+  padding: 0 3em;
 }
 
 /* index.html */
@@ -125,7 +124,7 @@ padding: 0 3em;
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: 5px;
-    padding-bottom: 15px;
+    padding-top: 75px;
   }
 
   .plant_img {
