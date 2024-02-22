@@ -7,8 +7,10 @@
 }
 
 main {
-  max-width: 1350px;
-  margin: 0 auto;
+  /* max-width: 1350px; */
+  /* margin: 0 auto; */
+padding: 0 3em;
+
 }
 
 /* index.html */
