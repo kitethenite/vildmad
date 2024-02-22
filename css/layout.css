@@ -76,6 +76,7 @@ main {
 
 .plants-grid .bioptope-text {
   grid-column: 1/-1;
+  max-width: 800px;
 }
 
 .plants-grid img {
