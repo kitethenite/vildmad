@@ -74,9 +74,8 @@ footer {
 }
 
 .sm-icons {
-display: grid;
-grid-template-columns: 1fr 1fr;
-
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .sm-icons h4 {
@@ -86,13 +85,11 @@ grid-template-columns: 1fr 1fr;
 
 .sm-icons div {
   grid-column: 1/-1;
-display: flex;
-flex-direction: in;
-justify-content: center;
-gap: 10px;
+  display: flex;
+  flex-direction: in;
+  justify-content: center;
+  gap: 15px;
 }
-
-
 
 .footer2 {
   display: grid;
@@ -111,21 +108,16 @@ gap: 10px;
   aspect-ratio: 1/1;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 32px;
-  /* position: absolute;
-  margin-top: 5px;
-  margin-left: 15%; */
+  width: 50px;
+  margin-top: -10px;
 }
 #facebook_logo {
   background-image: url(/img/facebook.svg);
   aspect-ratio: 1/1;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 32px;
-  /* position: relative;
-  margin-bottom: 20px;
-  margin-top: 80px;
-  margin-left: 45%; */
+  width: 50px;
+  margin-top: -10px;
 }
 
 #formular_logo {
@@ -183,7 +175,6 @@ gap: 10px;
     aspect-ratio: 1/1;
     background-size: cover;
     background-repeat: no-repeat;
-
   }
   #instagram_logo {
     width: 30px;
@@ -191,6 +182,5 @@ gap: 10px;
 
   #facebook_logo {
     width: 30px;
-
   }
 }
