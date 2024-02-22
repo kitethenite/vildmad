@@ -78,7 +78,7 @@ nav {
   aspect-ratio: 1/1;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 4%;
+  width: 60px;
   position: absolute;
   margin-top: 5px;
   margin-left: 15%;
@@ -88,7 +88,7 @@ nav {
   aspect-ratio: 1/1;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 12%;
+  width: 60px;
   position: relative;
   margin-bottom: 20px;
   margin-top: 80px;
@@ -154,5 +154,13 @@ nav {
     height: 35px;
     margin-top: -12px;
     margin-left: 296px;
+  }
+  #instagram_logo {
+    width: 30px;
+  }
+
+  #facebook_logo {
+    width: 30px;
+    margin-top: 50px;
   }
 }

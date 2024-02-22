@@ -64,7 +64,7 @@ main {
 .plants-grid main h1 {
   grid-row: 1;
   grid-column: 1/-1;
-  padding-top: 5rem;
+  padding-top: 4rem;
 }
 .plants-grid main h2 {
   grid-row-start: 2;
@@ -224,7 +224,7 @@ label {
     padding-top: 15%;
   }
   .footerUser {
-    padding-top: 8%;
+    padding-top: 0%;
   }
   .userSectionLeft {
     padding-top: 2%;
@@ -234,6 +234,7 @@ label {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10%;
   }
   .userSectionRight {
     padding-top: 2%;
