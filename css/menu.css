@@ -71,6 +71,8 @@ body {
 footer {
   padding: 5em 0 0;
   margin-top: auto;
+  font-weight: 100 !important;
+  font-size: 10px;
 }
 
 .sm-icons {
@@ -81,6 +83,8 @@ footer {
 .sm-icons h4 {
   grid-row: 1;
   grid-column: 1/-1;
+  height: 0;
+  
 }
 
 .sm-icons div {

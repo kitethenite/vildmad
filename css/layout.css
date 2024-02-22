@@ -13,7 +13,9 @@ main {
 }
 
 /* index.html */
-
+.p-over-map {
+  padding: 0 0 0.5em;
+}
 /* tools.html */
 
 .tools {
@@ -85,7 +87,6 @@ main {
 
 .plants-grid article {
   padding: 1rem;
-  padding-left: 8rem;
 }
 
 .in-season {
@@ -98,7 +99,25 @@ main {
 /* plants.html */
 
 /* plant_info.html */
+@media screen and (max-width: 500px) {
+  .plants-grid main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+  }
+}
+
 @media screen and (max-width: 800px) {
+  main {
+    padding: 0 1em;
+  }
+
+  .plants-grid main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+  }
+
   .plant_img {
     display: grid;
     justify-items: center;
@@ -119,6 +138,7 @@ main {
     padding-bottom: 5%;
   }
 }
+
 @media screen and (min-width: 800px) {
   .plant_info {
     display: grid;
