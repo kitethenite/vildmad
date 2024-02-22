@@ -104,23 +104,25 @@ main {
 }
 
 /* user.html */
-.user_wrapper1 {
-  display: grid;
-  gap: 10px;
-  grid-template-rows: 1fr 1fr;
+.userMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30%;
+}
+.userSectionLeft {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.headline_getStarted {
+  margin-bottom: 10%;
+}
+.footerUser {
+  padding-top: 25%;
 }
 
-.user_wrapper2 {
-  display: grid;
-  gap: 10px;
-  grid-template-rows: 1fr 1fr;
-  background-color: #fdfaf4;
-}
-.plant_user_img {
-  grid-row: 1 / span 2;
-}
-
-/* signUup.html */
+/* sign_up.html */
 .signUp_wreapper1 {
   display: grid;
   grid-template-columns: 1fr;
@@ -132,6 +134,11 @@ main {
   grid-column: 1;
   grid-row: 1;
   z-index: 2;
+}
+.line_signUp {
+  border-bottom: 2px solid #513e36;
+  width: 95%;
+  display: block;
 }
 form {
   grid-column: 1;
@@ -149,8 +156,19 @@ label {
 .rightSection {
   width: 100%;
 }
+.plant_img_signUp_wreapper1,
+.plant_user_img {
+  display: none;
+}
+.mainSignIn,
+.mainSignUp {
+  padding-bottom: 50px;
+  padding-top: 20px;
+  margin-left: 3%;
+  margin-right: 3%;
+}
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 1024px) {
   .userMain,
   .mainSignUp,
   .mainSignIn {
@@ -158,6 +176,12 @@ label {
     justify-content: space-between;
   }
 
+  .userMain {
+    padding-top: 15%;
+  }
+  .footerUser {
+    padding-top: 8%;
+  }
   .userSectionLeft {
     padding-top: 2%;
     width: 50%;
@@ -173,22 +197,48 @@ label {
     padding: 20px;
     box-sizing: border-box; /* Include padding in width calculation */
   }
-
-  .leftSection {
-    padding-top: 2%;
-    width: 50%;
-    padding: 20px;
-    background-color: #fdfaf4;
-    box-sizing: border-box; /* Include padding in width calculation */
+  .headline_getStarted {
+    margin-bottom: 10%;
   }
 
-  .rightSection {
-    padding-top: 2%;
-    width: 50%;
+  /* sign_up.html */
+  .headline_signUp {
+    padding-bottom: 2%;
+    padding-top: 0%;
+  }
+  .line_signUp {
+    border-bottom: 2px solid #513e36;
+    width: 70%;
+    display: block;
+  }
+  .p_txtSignUp {
+    text-align: left;
+    margin-right: 13%;
+    margin-left: 15%;
+  }
+  .mainSignUp {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    height: 85vh; /* Gør at mainSignUp fylder hele skærmens højde */
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .headerSignUp {
+    padding: 0px;
+  }
+  .headerRight,
+  .headerLeft {
+    padding: 20px;
+  }
+
+  /* sign_in.html */
+  .mainSignIn {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-left: 0%;
+    margin-right: 0%;
   }
 
   .leftSection_signIn {
@@ -201,10 +251,17 @@ label {
   }
 
   .rightSection_signIn {
-    padding-top: 2%;
     width: 50%;
     padding: 20px;
-    background-color: #fdfaf4;
+    /* background-color: #fdfaf4; */
     box-sizing: border-box; /* Include padding in width calculation */
+    padding-top: 5%;
+    padding-bottom: 4%;
+  }
+  .plant_img_signUp_wreapper1 {
+    display: contents;
+  }
+  .plant_img_signUp_wreapper1 img {
+    width: 75%;
   }
 }
