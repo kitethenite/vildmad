@@ -1,86 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;1,300&family=Montserrat:ital,wght@0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;1,300&family=Montserrat:ital,wght@0,600;1,600&display=swap"
-    rel="stylesheet" />
+    <title>Sign up</title>
 
-  <title>Sign up</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/menuUser.css" />
+  </head>
 
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="css/layout.css" />
-  <link rel="stylesheet" href="css/menu.css" />
-  <link rel="stylesheet" href="css/menuUser.css" />
-</head>
-
-<body>
-  <header>
-    <section class="headerLeftSignUp">
-      <div class="logo">
-        <a href="/">
-          <img src="logo.png" alt="Logo" />
-        </a>
-      </div>
-    </section>
-    <section class="headerRightSignUp">
-      <nav>
-        <ul class="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="tools.html">Tools</a></li>
-          <li><a href="forage.html">Forage</a></li>
-          <li><a href="biotop.html">Biotope</a></li>
-          <li>
-            <div id="formular">
-              <a href="user.html">
-                <div id="formular_logo"></div>
-              </a>
-            </div>
-          </li>
-        </ul>
-        <div class="burger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
+  <body>
+    <header>
+      <section class="headerLeftSignUp">
+        <div class="logo">
+          <a href="/">
+            <img src="assets/logo.svg" alt="Logo" />
+          </a>
         </div>
-      </nav>
-    </section>
-  </header>
+      </section>
+      <section class="headerRightSignUp">
+        <nav>
+          <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tools.html">Tools</a></li>
+            <li><a href="forage.html">Forage</a></li>
+            <li>
+              <div id="formular">
+                <a href="user.html">
+                  <div id="formular_logo"></div>
+                </a>
+              </div>
+            </li>
+          </ul>
+          <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </nav>
+      </section>
+    </header>
 
-  <main class="mainSignUp">
+    <main class="mainSignUp">
+      <h1 class="headline_signUp">Sign up</h1>
+      <span class="line_signUp"></span>
 
+      <p class="p_txtSignUp">
+        Create an user so you can save your favourite plants to forage,
+        recipices, and much more.
+        <br />
+        <br />
+      </p>
 
-    <h1 class="headline_signUp">Sign up</h1>
-    <span class="line_signUp"></span>
+      <form name="login" method="POST" netlify>
+        <label for="fullName">Full name:</label><br />
+        <input type="text" id="fullName" name="fullName" /><br />
 
-    <p class="p_txtSignUp">
-      Create an user so you can save your favourite plants to forage, recipices, and much more.
-      <br>
-      <br>
-    </p>
+        <label for="username">Username:</label><br />
+        <input type="text" id="username" name="username" /><br />
 
-    <form name="login" method="POST" netlify>
-      <label for="fullName">Full name:</label><br />
-      <input type="text" id="fullName" name="fullName" /><br />
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" /><br />
 
-      <label for="username">Username:</label><br />
-      <input type="text" id="username" name="username" /><br />
+        <label for="password">Password:</label><br />
+        <input type="password" id="password" name="password" /><br /><br />
 
-      <label for="email">Email:</label><br />
-      <input type="email" id="email" name="email" /><br />
-
-      <label for="password">Password:</label><br />
-      <input type="password" id="password" name="password" /><br /><br />
-
-      <input type="submit" id="submit" value="Submit" />
-    </form>
-
-  </main>
+        <input type="submit" id="submit" value="Submit" />
+      </form>
+    </main>
 
   <footer>
     <div class="footer2">
