@@ -61,6 +61,36 @@ nav {
   display: none;
 }
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
+
+.sm-icons {
+display: grid;
+grid-template-columns: 1fr 1fr;
+
+}
+
+.sm-icons h4 {
+  grid-row: 1;
+  grid-column: 1/-1;
+}
+
+.sm-icons div {
+  grid-column: 1/-1;
+display: flex;
+justify-content: center;
+gap: 10px;
+}
+
+
+
 .footer2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -78,21 +108,21 @@ nav {
   aspect-ratio: 1/1;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 60px;
-  position: absolute;
+  width: 32px;
+  /* position: absolute;
   margin-top: 5px;
-  margin-left: 15%;
+  margin-left: 15%; */
 }
 #facebook_logo {
   background-image: url(/img/facebook.svg);
   aspect-ratio: 1/1;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 60px;
-  position: relative;
+  width: 32px;
+  /* position: relative;
   margin-bottom: 20px;
   margin-top: 80px;
-  margin-left: 45%;
+  margin-left: 45%; */
 }
 
 #formular_logo {
