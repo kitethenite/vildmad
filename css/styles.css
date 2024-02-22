@@ -114,14 +114,15 @@ h1 {
 /* plants.html */
 
 /* plant_info.html */
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 800px) {
   .plant-image {
     width: 300px;
   }
 }
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 800px) {
   .plant-image {
-    width: 450px;
+    width: 400px;
+    padding: 2em;
   }
 }
 
