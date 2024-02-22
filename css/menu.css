@@ -90,7 +90,6 @@ footer {
 .sm-icons div {
   grid-column: 1/-1;
   display: flex;
-  flex-direction: in;
   justify-content: center;
   gap: 15px;
 }
