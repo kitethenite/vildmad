@@ -86,7 +86,7 @@ label {
   margin-right: 3%;
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 1024px) {
   .userMain,
   .mainSignUp,
   .mainSignIn {
@@ -100,7 +100,6 @@ label {
   .footerUser {
     padding-top: 8%;
   }
-
   .userSectionLeft {
     padding-top: 2%;
     width: 50%;
@@ -123,18 +122,26 @@ label {
   /* sign_up.html */
   .headline_signUp {
     padding-bottom: 2%;
+    padding-top: 0%;
   }
   .line_signUp {
     border-bottom: 2px solid #513e36;
     width: 70%;
     display: block;
   }
+  .p_txtSignUp {
+    text-align: left;
+    margin-right: 13%;
+    margin-left: 15%;
+  }
   .mainSignUp {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Gør at mainSignUp fylder hele skærmens højde */
+    height: 85vh; /* Gør at mainSignUp fylder hele skærmens højde */
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
   .headerSignUp {
     padding: 0px;
@@ -164,7 +171,7 @@ label {
   .rightSection_signIn {
     width: 50%;
     padding: 20px;
-    background-color: #fdfaf4;
+    /* background-color: #fdfaf4; */
     box-sizing: border-box; /* Include padding in width calculation */
     padding-top: 5%;
     padding-bottom: 4%;

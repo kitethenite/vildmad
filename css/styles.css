@@ -157,7 +157,17 @@ input[type="submit"]:hover {
   background-color: #45a049;
 }
 
-@media screen and (min-width: 850px) {
+.p_txtSignUp {
+  text-align: left;
+  margin-right: 0%;
+  margin-left: 0%;
+}
+.p_txtSignIn {
+  font-size: 1.5rem;
+  padding-top: 2%;
+}
+
+@media screen and (min-width: 1025px) {
   /* user.html */
   .headline_getStarted {
     font-size: 5rem;
@@ -211,8 +221,8 @@ input[type="submit"]:hover {
 
   .p_txtSignUp {
     text-align: left;
-    margin-right: 0%;
-    margin-left: 0%;
+    margin-right: 13%;
+    margin-left: 15%;
   }
 }
 
