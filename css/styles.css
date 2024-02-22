@@ -151,10 +151,8 @@ h1 {
 .plant_user_img img {
   width: 100%;
 }
-.headerUser,
-.logoUser,
-.userMain,
-.footerUser {
+
+.userMain {
   background-color: #fdfaf4;
 }
 
