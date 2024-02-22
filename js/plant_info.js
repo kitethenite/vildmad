@@ -1,13 +1,10 @@
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 
-const url =
-`https://pitrqqwekcolglxqqngo.supabase.co/rest/v1/vild_mad?id=eq.${id}`
+const url = `https://pitrqqwekcolglxqqngo.supabase.co/rest/v1/vild_mad?id=eq.${id}`;
 
 const key =
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBpdHJxcXdla2NvbGdseHFxbmdvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc2ODA5NjksImV4cCI6MjAyMzI1Njk2OX0.84FjJ7ILcIkugWA0eYWDBVy-ChVHdqLbYHSfHxmv1eo";
-
-
 
 fetch(url, {
   method: "GET",
@@ -17,7 +14,6 @@ fetch(url, {
 })
   .then((response) => response.json())
   .then((data) => showData(data));
-
 
 function showData(data) {
   console.log(data); // Check if data is accessible within this function
@@ -32,9 +28,11 @@ function showData(data) {
   const plantImageUrl = plantInfo.image;
 
   // Update the DOM elements with the retrieved data
+  // plant name
   document.querySelector(".plant-name").textContent = plantName;
+  // plant description
   document.querySelector(".description").textContent = plantDescription;
-
+  // plant image
   document.querySelector(".plant-image").src = plantImageUrl;
 
   // Months array
