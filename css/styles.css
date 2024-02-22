@@ -46,7 +46,7 @@ p {
   font-weight: 300;
   font-size: 1rem;
   line-height: 30px;
-  letter-spacing: 2px;
+  letter-spacing: 1.2px;
   color: #513e36;
 }
 
@@ -299,5 +299,5 @@ input[type="submit"]:hover {
 footer h4 {
   font-family: "Karla", sans-serif;
   font-size: 18px;
-  text-align: center;
+
 }
