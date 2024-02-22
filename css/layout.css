@@ -224,7 +224,7 @@ label {
     padding-top: 15%;
   }
   .footerUser {
-    padding-top: 8%;
+    padding-top: 0%;
   }
   .userSectionLeft {
     padding-top: 2%;
@@ -234,6 +234,7 @@ label {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10%;
   }
   .userSectionRight {
     padding-top: 2%;
