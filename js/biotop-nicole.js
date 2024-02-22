@@ -33,7 +33,10 @@ fetch(url, {
 
 // dags att loopa och kalla showPlants
 function showPlants(plants) {
-  plants.forEach(showPlant);
+  const filteredPlants = plants.filter((plant) => plant.biotop.includes(tag));
+
+  // Display filtered plants
+  filteredPlants.forEach(showPlant);
 }
 
 function showPlant(plant) {
